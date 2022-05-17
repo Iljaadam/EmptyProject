@@ -14,7 +14,7 @@ def start_game():
     show_score()
     while wanna_play.lower() == "yes":
         try:
-            guess = input("Pick a number between 1 and 10 ")
+            guess = input("Pick a number between 1 and 10, did you hear me?")
             if int(guess) < 1 or int(guess) > 10:
                 raise ValueError("Please guess a number within the given range")
             if int(guess) == random_number:
